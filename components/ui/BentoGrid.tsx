@@ -2,8 +2,10 @@
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { ShootingStars } from "./ShootingStars";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
@@ -93,11 +95,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        {id == 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>
-          </BackgroundGradientAnimation>
-        )}
+        {id == 6 && <BackgroundGradientAnimation></BackgroundGradientAnimation>}
 
         <div
           className={cn(
