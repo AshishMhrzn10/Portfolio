@@ -57,8 +57,8 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Javascript", "HTML&CSS"];
+  const rightLists = ["Nodejs", "Django", "Solidity"];
   return (
     <div
       className={cn(
@@ -71,7 +71,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)"
       }}
     >
-      <div className={`${id == 6 && "flex justify-center"} h-full`}>
+      <div className={`${id == 5 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -95,7 +95,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        {id == 6 && <BackgroundGradientAnimation></BackgroundGradientAnimation>}
+        {id == 5 && <BackgroundGradientAnimation></BackgroundGradientAnimation>}
 
         <div
           className={cn(
@@ -106,7 +106,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg lg:text-xl max-w-96 z-10">
             {title}
           </div>
 
@@ -141,7 +141,7 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {id == 6 && (
+          {id == 5 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
                 <Lottie
