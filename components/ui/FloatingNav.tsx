@@ -69,7 +69,7 @@ export const FloatingNav = ({
             },
             idx: number
           ) => (
-            <p
+            <button
               key={`link=${idx}`}
               onClick={() => scrollToSection(navItem.link)}
               className={cn(
@@ -78,7 +78,7 @@ export const FloatingNav = ({
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="text-sm !cursor-pointer">{navItem.name}</span>
-            </p>
+            </button>
           )
         )}
       </motion.div>
