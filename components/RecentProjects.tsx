@@ -10,23 +10,23 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects.</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-12 mt-10 sm:gap-16 ">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[25rem] h-[25rem] lg:min-h-[25rem] flex items-center justify-center sm:w-[350px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[350px] w-[80vw] overflow-hidden sm:h-[25vh] h-[30vh] mb-10">
                 <div className="relative h-full w-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
                 <img src={img} alt={title} className="absolute z-10 bottom-0" />
               </div>
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-xl md:text-xl text-base text-purple">
                 {title}
               </h1>
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+              <p className="lg:text-sm xs:text-xl lg:font-normal font-light text-sm">
                 {des}
               </p>
 
@@ -45,7 +45,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    View Project
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

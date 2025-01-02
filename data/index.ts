@@ -63,35 +63,51 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories"
+    title: "ElectraStore - An Electronic hub",
+    des: "Discover the latest electronics and gadgets at ElectraStore. Shop quality products at great prices with fast delivery.",
+    img: "/p1.png",
+    iconLists: ["/next.svg", "/sanity.svg", "/stripe.svg", "/js.svg"],
+    link: "https://electrastore.netlify.app/"
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone"
+    title: "Student Management System",
+    des: "Efficiently manage student data, track performance, and simplify administration with user-friendly Student Management System.",
+    img: "/p2.png",
+    iconLists: ["/dj.svg", "/sql.svg", "/js.svg", "/html.svg", "/css.svg"],
+    link: "https://github.com/AshishMhrzn10/Student-management-system"
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app"
+    title: "Online voting using Blockchain",
+    des: "Secure and transparent online voting system powered by blockchain technology, ensuring trust and tamper-proof results.",
+    img: "/p3.png",
+    iconLists: ["/sol.svg", "/js.svg", "/next.svg", "/chai.svg"],
+    link: "https://github.com/AshishMhrzn10/Online-voting-system"
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Animated Apple Iphone 3D Site",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone"
+    link: "https://iphoneclone1032.netlify.app/"
+  },
+  {
+    id: 5,
+    title: "Memories Project",
+    des: "Created full stack Social Media App with Auth, Pagination and Comments",
+    img: "/p5.png",
+    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+    link: "https://github.com/AshishMhrzn10/MemoriesProject/"
+  },
+  {
+    id: 6,
+    title: "exploRUG",
+    des: "Played a vital role in maintaining the flagship project for the company",
+    img: "/p6.png",
+    iconLists: ["/react.svg", "/js.svg", "/three.svg"],
+    link: "https://ruglife.explorug.com/"
   }
 ];
 
