@@ -6,7 +6,7 @@ import {
   useScroll,
   useMotionValueEvent
 } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { cn, scrollToSection } from "@/utils/cn";
 import Link from "next/link";
 
 export const FloatingNav = ({
@@ -69,16 +69,16 @@ export const FloatingNav = ({
             },
             idx: number
           ) => (
-            <Link
+            <p
               key={`link=${idx}`}
-              href={navItem.link}
+              onClick={() => scrollToSection(navItem.link)}
               className={cn(
                 "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="text-sm !cursor-pointer">{navItem.name}</span>
-            </Link>
+            </p>
           )
         )}
       </motion.div>

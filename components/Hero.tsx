@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import { scrollToSection } from "@/utils/cn";
 
 const Hero = () => {
   return (
@@ -40,14 +42,12 @@ const Hero = () => {
             using modern technologies, creating seamless and engaging user
             experiences.
           </p>
-
-          <a href="#projects">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <MagicButton
+            title="Show my work"
+            icon={<FaLocationArrow />}
+            position="right"
+            handleClick={() => scrollToSection("projects")}
+          />
         </div>
       </div>
     </div>
