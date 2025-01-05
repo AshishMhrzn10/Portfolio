@@ -3,7 +3,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaFile, FaLocationArrow } from "react-icons/fa6";
 import { scrollToSection } from "@/utils/cn";
 
 const Hero = () => {
@@ -26,8 +26,8 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center">
+      <div className="flex justify-center relative my-10 sm:my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center gap-3 sm:gap-2">
           <h2 className="uppercase tracking-widest text-md text-center text-blue-100 max-w-80">
             Hi&#128400;, I'm Ashish Maharjan
           </h2>
@@ -42,12 +42,21 @@ const Hero = () => {
             using modern technologies, creating seamless and engaging user
             experiences.
           </p>
-          <MagicButton
-            title="Show my work"
-            icon={<FaLocationArrow />}
-            position="right"
-            handleClick={() => scrollToSection("projects")}
-          />
+          <div className="flex gap-5 sm:flex-row flex-col">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+              handleClick={() => scrollToSection("projects")}
+            />
+            <a target="_blank" href="./ashish-cv.pdf">
+              <MagicButton
+                title="View My CV"
+                icon={<FaFile />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
