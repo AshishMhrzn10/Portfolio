@@ -63,6 +63,22 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "StoryCraft Nepal",
+    des: "A platform for customized children's stories, where parents can create personalized tales for their kids.",
+    img: "/storycraft.png",
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg"],
+    link: "http://storycraftnepal.netlify.app/"
+  },
+  {
+    id: 2,
+    title: "Project Abhaya",
+    des: "Empowering Voices, Shaping Policies. Women Leading in Politics, Narrative Building, and Global Diplomacy",
+    img: "/abhaya.png",
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg"],
+    link: "https://projectabhaya.com/"
+  },
+  {
+    id: 3,
     title: "ElectraStore - An Electronic hub",
     des: "Discover the latest electronics and gadgets at ElectraStore. Shop quality products at great prices with fast delivery.",
     img: "/p1.png",
@@ -70,7 +86,7 @@ export const projects = [
     link: "https://electrastore.netlify.app/"
   },
   {
-    id: 2,
+    id: 4,
     title: "Student Management System",
     des: "Efficiently manage student data, track performance, and simplify administration with user-friendly Student Management System.",
     img: "/p2.png",
@@ -78,29 +94,29 @@ export const projects = [
     link: "https://github.com/AshishMhrzn10/Student-management-system"
   },
   {
-    id: 3,
+    id: 5,
     title: "Online voting using Blockchain",
     des: "Secure and transparent online voting system powered by blockchain technology, ensuring trust and tamper-proof results.",
     img: "/p3.png",
     iconLists: ["/sol.svg", "/js.svg", "/next.svg", "/chai.svg"],
     link: "https://github.com/AshishMhrzn10/Online-voting-system"
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Site",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://iphoneclone1032.netlify.app/"
-  },
-  {
-    id: 5,
-    title: "Memories Project",
-    des: "Created full stack Social Media App with Auth, Pagination and Comments",
-    img: "/p5.png",
-    iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/js.svg"],
-    link: "https://github.com/AshishMhrzn10/MemoriesProject/"
-  },
+  // {
+  //   id: 4,
+  //   title: "Animated Apple Iphone 3D Site",
+  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
+  //   img: "/p4.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link: "https://iphoneclone1032.netlify.app/"
+  // },
+  // {
+  //   id: 5,
+  //   title: "Memories Project",
+  //   des: "Created full stack Social Media App with Auth, Pagination and Comments",
+  //   img: "/p5.png",
+  //   iconLists: ["/react.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+  //   link: "https://github.com/AshishMhrzn10/MemoriesProject/"
+  // },
   {
     id: 6,
     title: "exploRUG",
